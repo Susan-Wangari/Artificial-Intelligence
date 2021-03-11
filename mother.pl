@@ -35,3 +35,17 @@ father(F,K),
 write('the father is '), write(F),nl,
 write('the mother is '),
 write(P).
+
+findwife:- write('whose wife do you want to find?'), nl,
+read(F),
+mother(P,K),
+father(F,K),
+write('the wife is '),
+write(P).
+
+findhusband:- write('whose husband do you want to find?'),nl,
+read(P),
+mother(P,K),
+father(F,K),
+write('the husband is '),
+write(F).
